@@ -1,0 +1,6 @@
+body {
+  background-color: #09090a;
+  color: #fff;
+  display: grid;
+  place-items: center;
+}
