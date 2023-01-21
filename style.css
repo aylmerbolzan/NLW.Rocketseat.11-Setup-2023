@@ -1,6 +1,22 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
   background-color: #09090a;
   color: #fff;
-  display: grid;
-  place-items: center;
+}
+
+body * {
+  border: 1px solid red;
+}
+
+button {
+  border-radius: 8px;
+  padding: 16px 24px;
+  border: 1px solid #8b5cf6;
+  color: white;
+  background-color: transparent ;
 }
