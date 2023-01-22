@@ -1,15 +1,35 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
     <title>Hábitos</title>
-</head>
-<body>
-    <img src="assets/plus.svg" alt="">
-    <img src="./assets/logo.svg" alt="">
-    <button>+ Registrar o meu dia</button>
-</body>
+  </head>
+  <body>
+    <header>
+      <img src="./assets/logo.svg" alt="" />
+      <button>
+        <img src="assets/plus.svg" alt="" />
+        <div>Registrar o meu dia</div>
+      </button>
+    </header>
+    <form id="form-habits">
+      <div class="habits">
+        <div class="habit" data-name="racaoGatos">🐱🍽️</div>
+        <div class="habit" data-name="aguaGatos">🐱💧</div>
+        <div class="habit" data-name="cocoGatos">🐱💩</div>
+        <div class="habit" data-name="racaoHamster">🐹🍽️</div>
+        <div class="habit" data-name="aguaHamster">🐹💧</div>
+        <div class="habit" data-name="racaoCachorros">🐶🍽️</div>
+        <div class="habit" data-name="aguaCachorros">🐶💧</div>
+        <div class="habit" data-name="cocoCachorros">🐶💩</div>
+      </div>
+
+      <div class="days"></div>
+    </form>
+    <script src="https://cdn.jsdelivr.net/gh/maykbrito/libs/NLWSetup/source/NLWSetup.js"></script>
+    <script src="./script.js"></script>
+  </body>
 </html>

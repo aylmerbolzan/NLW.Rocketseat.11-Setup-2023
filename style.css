@@ -1,3 +1,7 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@700&display=swap");
+
 * {
   margin: 0;
   padding: 0;
@@ -7,10 +11,18 @@
 body {
   background-color: #09090a;
   color: #fff;
+  height: 100vh;
 }
 
-body * {
-  border: 1px solid red;
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 48px;
+
+  position: fixed;
+  width: 100%;
+  background-color: #09090a;
 }
 
 button {
@@ -18,5 +30,82 @@ button {
   padding: 16px 24px;
   border: 1px solid #8b5cf6;
   color: white;
-  background-color: transparent ;
+  background-color: transparent;
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  font-family: "Inter";
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 125%;
+  cursor: pointer;
+}
+
+#form-habits {
+  display: flex;
+  padding: 182px 48px 48px;
+  width: fit-content;
+}
+
+.habits {
+  margin-top: 70px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.habits div {
+  width: 90px;
+  justify-content: space-between;
+}
+
+.habit {
+  width: 64px;
+  height: 64px;
+  font-size: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.days {
+  display: flex;
+  gap: 48px;
+  margin-left: 32px;
+}
+
+.day {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.day div {
+  margin-bottom: 24px;
+  font-family: "Roboto Mono";
+  font-size: 20px;
+  line-height: 125%;
+  color: #a1a1aa;
+  text-align: center;
+}
+
+input {
+  appearance: none;
+  -webkit-appearance: none;
+  width: 64px;
+  height: 64px;
+  border: 2px solid #27272a;
+  border-radius: 8px;
+  background: #18181b;
+  cursor: pointer;
+}
+
+input:checked {
+  background: #8b5cf6;
+}
+
+@media (max-width: 570px) {
+  button div {
+    display: none;
+  }
 }
